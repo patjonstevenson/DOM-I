@@ -162,13 +162,15 @@ ctaButton.addEventListener(
 );
 
 // Add details to each .text-content div
-function createDetails() {
+function createDetails(subject) {
   const details = document.createElement("details");
-  details.textContent = "This is a test of a details element";
+  details.textContent = `Here are more details about ${subject}.`;
   const detailsSummary = document.createElement("summary");
   detailsSummary.textContent = "Details";
   details.prepend(detailsSummary);
   details.style.paddingTop = "2.5%";
   return details;
 }
-textCont.forEach(elem => elem.appendChild(createDetails()));
+textCont.forEach(elem =>
+  elem.appendChild(createDetails(elem.querySelector("h4").textContent))
+);

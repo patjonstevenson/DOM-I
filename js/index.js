@@ -154,3 +154,9 @@ head.prepend(newFont);
 // Add new fnot to button
 ctaButton.style.fontFamily = "Source Code Pro";
 ctaButton.style.width = "250px";
+
+// Button Event
+ctaButton.addEventListener(
+  "click",
+  event => (document.querySelector("body").style.background = "red")
+);

@@ -155,11 +155,15 @@ head.prepend(newFont);
 ctaButton.style.fontFamily = "Source Code Pro";
 ctaButton.style.width = "250px";
 
+// Create new style class 'red'
+const red = document.createElement("style");
+red.type = "text/css";
+red.innerHTML = ".red {background: red;}";
+head.prepend(red);
+const body = document.querySelector("body");
+
 // Button Event
-ctaButton.addEventListener(
-  "click",
-  event => (document.querySelector("body").style.background = "red")
-);
+ctaButton.addEventListener("click", event => body.classList.toggle("red"));
 
 // Add details to each .text-content div
 function createDetails(subject) {

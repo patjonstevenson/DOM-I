@@ -46,6 +46,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+// *** TASK 2 ***
+
 // Update Nav Text
 const nav = document.querySelector("nav");
 const anchors = nav.querySelectorAll("a");
@@ -123,3 +125,19 @@ const contactPs = contact.querySelectorAll("p");
 contactPs[0].textContent = siteContent.contact.address;
 contactPs[1].textContent = siteContent.contact.phone;
 contactPs[2].textContent = siteContent.contact.email;
+
+// *** TASK 3 ***
+
+// Make nav text green
+anchors.forEach(a => (a.style.color = "green"));
+
+// Add items to nav
+const history = document.createElement("a");
+history.textContent = "History";
+history.href = "#";
+nav.appendChild(history);
+
+const founder = document.createElement("a");
+founder.textContent = "Founder";
+founder.href = "#";
+nav.prepend(founder);

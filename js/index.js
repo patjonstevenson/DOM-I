@@ -77,43 +77,38 @@ ctaButton.textContent = siteContent.cta.button;
 const textCont = document.querySelectorAll(".text-content");
 
 // Features
-textCont[0].querySelector("h4").textContent =
-  siteContent["main-content"]["features-h4"];
-
-textCont[0].querySelector("p").textContent =
-  siteContent["main-content"]["features-content"];
+const featuresH4 = textCont[0].querySelector("h4");
+featuresH4.textContent = siteContent["main-content"]["features-h4"];
+const featuresContent = textCont[0].querySelector("p");
+featuresContent.textContent = siteContent["main-content"]["features-content"];
 
 // About
-textCont[1].querySelector("h4").textContent =
-  siteContent["main-content"]["about-h4"];
-
-textCont[1].querySelector("p").textContent =
-  siteContent["main-content"]["about-content"];
+const aboutH4 = textCont[1].querySelector("h4");
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
+const aboutContent = textCont[1].querySelector("p");
+aboutContent.textContent = siteContent["main-content"]["about-content"];
 
 // Middle Image Source
 const middleImg = document.getElementById("middle-img");
 middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 // Services
-textCont[2].querySelector("h4").textContent =
-  siteContent["main-content"]["services-h4"];
-
-textCont[2].querySelector("p").textContent =
-  siteContent["main-content"]["services-content"];
+const servicesH4 = textCont[2].querySelector("h4");
+servicesH4.textContent = siteContent["main-content"]["services-h4"];
+const servicesContent = textCont[2].querySelector("p");
+servicesContent.textContent = siteContent["main-content"]["services-content"];
 
 // Product
-textCont[3].querySelector("h4").textContent =
-  siteContent["main-content"]["product-h4"];
-
-textCont[3].querySelector("p").textContent =
-  siteContent["main-content"]["product-content"];
+const productH4 = textCont[3].querySelector("h4");
+productH4.textContent = siteContent["main-content"]["product-h4"];
+const productContent = textCont[3].querySelector("p");
+productContent.textContent = siteContent["main-content"]["product-content"];
 
 // Vision
-textCont[4].querySelector("h4").textContent =
-  siteContent["main-content"]["vision-h4"];
-
-textCont[4].querySelector("p").textContent =
-  siteContent["main-content"]["vision-content"];
+const visionH4 = textCont[4].querySelector("h4");
+visionH4.textContent = siteContent["main-content"]["vision-h4"];
+const visionContent = textCont[4].querySelector("p");
+visionContent.textContent = siteContent["main-content"]["vision-content"];
 
 // Contact Section
 

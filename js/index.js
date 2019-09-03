@@ -151,7 +151,7 @@ newFont.rel = "stylesheet";
 const head = document.querySelector("head");
 head.prepend(newFont);
 
-// Add new fnot to button
+// Add new font to button
 ctaButton.style.fontFamily = "Source Code Pro";
 ctaButton.style.width = "250px";
 

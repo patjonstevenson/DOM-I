@@ -160,3 +160,15 @@ ctaButton.addEventListener(
   "click",
   event => (document.querySelector("body").style.background = "red")
 );
+
+// Add details to each .text-content div
+function createDetails() {
+  const details = document.createElement("details");
+  details.textContent = "This is a test of a details element";
+  const detailsSummary = document.createElement("summary");
+  detailsSummary.textContent = "Details";
+  details.prepend(detailsSummary);
+  details.style.paddingTop = "2.5%";
+  return details;
+}
+textCont.forEach(elem => elem.appendChild(createDetails()));

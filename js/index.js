@@ -46,6 +46,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+// Update Nav Text
 const nav = document.querySelector("nav");
 const anchors = nav.querySelectorAll("a");
 let i = 0;
@@ -58,5 +59,67 @@ for (let item in siteContent.nav) {
   }
 }
 
+// Update CTA Section Content
 let ctaImg = document.getElementById("cta-img");
 ctaImg.src = siteContent["cta"]["img-src"];
+
+const cta = document.querySelector(".cta-text");
+const ctaHeader = cta.querySelector("h1");
+ctaHeader.textContent = siteContent.cta.h1;
+
+const ctaButton = cta.querySelector("button");
+ctaButton.textContent = siteContent.cta.button;
+
+// Update Main Content Section
+
+const textCont = document.querySelectorAll(".text-content");
+
+// Features
+textCont[0].querySelector("h4").textContent =
+  siteContent["main-content"]["features-h4"];
+
+textCont[0].querySelector("p").textContent =
+  siteContent["main-content"]["features-content"];
+
+// About
+textCont[1].querySelector("h4").textContent =
+  siteContent["main-content"]["about-h4"];
+
+textCont[1].querySelector("p").textContent =
+  siteContent["main-content"]["about-content"];
+
+// Middle Image Source
+const middleImg = document.getElementById("middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+// Services
+textCont[2].querySelector("h4").textContent =
+  siteContent["main-content"]["services-h4"];
+
+textCont[2].querySelector("p").textContent =
+  siteContent["main-content"]["services-content"];
+
+// Product
+textCont[3].querySelector("h4").textContent =
+  siteContent["main-content"]["product-h4"];
+
+textCont[3].querySelector("p").textContent =
+  siteContent["main-content"]["product-content"];
+
+// Vision
+textCont[4].querySelector("h4").textContent =
+  siteContent["main-content"]["vision-h4"];
+
+textCont[4].querySelector("p").textContent =
+  siteContent["main-content"]["vision-content"];
+
+// Contact Section
+
+const contact = document.querySelector(".contact");
+contact.querySelector("h4").textContent = siteContent.contact["contact-h4"];
+
+const contactPs = contact.querySelectorAll("p");
+
+contactPs[0].textContent = siteContent.contact.address;
+contactPs[1].textContent = siteContent.contact.phone;
+contactPs[2].textContent = siteContent.contact.email;

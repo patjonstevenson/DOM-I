@@ -130,9 +130,27 @@ anchors.forEach(a => (a.style.color = "green"));
 const history = document.createElement("a");
 history.textContent = "History";
 history.href = "#";
+history.style.color = "green";
 nav.appendChild(history);
 
 const founder = document.createElement("a");
 founder.textContent = "Founder";
 founder.href = "#";
+founder.style.color = "green";
 nav.prepend(founder);
+
+// *** Stretch ***
+
+// Add new link element
+const newFont = document.createElement("link");
+newFont.href =
+  "https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap";
+newFont.rel = "stylesheet";
+
+// Prepend newFont to head
+const head = document.querySelector("head");
+head.prepend(newFont);
+
+// Add new fnot to button
+ctaButton.style.fontFamily = "Source Code Pro";
+ctaButton.style.width = "250px";
